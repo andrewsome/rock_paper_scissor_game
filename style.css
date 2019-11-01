@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap");
+html {
+  font-family: Asap, sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #24272e;
+}
+header {
+  background: white;
+  padding: 2rem;
+}
+
+header > h1 {
+  font-size: 4rem;
+  color: #24272e;
+  text-align: center;
+}
+.score-board {
+  margin: 2rem auto;
+  border: 3px solid white;
+  width: 20rem;
+  color: white;
+  font-size: 6rem;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+.badge {
+  background: #e25840;
+  font-size: 2rem;
+}
+
+#player-lable {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10%;
+}
+#AI-lable {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4%;
+}
+.result {
+  font-size: 3rem;
+  color: white;
+}
+.result > p {
+  font-weight: bold;
+  text-align: center;
+}
+.option {
+  margin-top: 3rem 0;
+  text-align: center;
+}
+.action {
+  width: 10rem;
+  height: 10rem;
+  display: inline-flex;
+  border: 0.25rem solid white;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0 2.5rem;
+  position: relative;
+}
+.action img {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.action:hover {
+  cursor: pointer;
+  background-color: #14181f;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.green-glow {
+  border-color: 1rem solid green;
+  box-shadow: 0 0 1rem lawngreen;
+}
+.red-glow {
+  border-color: 1rem solid red;
+  box-shadow: 0 0 1rem orangered;
+}
+.grey-glow {
+  border-color: 1rem solid grey;
+  box-shadow: 0 0 1rem #9b9b9b;
+}
